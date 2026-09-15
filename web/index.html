@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ronit's Extremely Questionable Server</title>
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+                <div class="logo">
+                    <img src="/favicon.png" alt="!Logo!">
+                    C++ SERVER
+                </div>
+
+            <div class="nav-links">
+                <a href="/">Home</a>
+                <a href="/about.html">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero">
+            <div class="badge">HTTP/1.1 • RUNNING LOCALLY</div>
+
+            <h1>
+                This website is being served by
+                <span>C++</span>.
+            </h1>
+
+            <p>
+                No Node.js. No Python. No fancy framework.
+                Just WinSock, TCP, HTTP and questionable engineering decisions.
+            </p>
+
+            <div class="buttons">
+                <a class="button primary" href="/about.html">
+                    Learn More →
+                </a>
+
+                <button class="button secondary" onclick="serverButton()">
+                    Press Me
+                </button>
+            </div>
+
+            <div id="message"></div>
+        </section>
+
+
+        <section class="cards">
+
+            <div class="card">
+                <div class="card-icon">🌐</div>
+                <h2>HTTP</h2>
+                <p>
+                    The browser sends an HTTP request and this little
+                    server sends an HTTP response back.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⚙️</div>
+                <h2>WinSock</h2>
+                <p>
+                    Underneath everything is a TCP socket created using
+                    the Windows Socket API.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📁</div>
+                <h2>Static Files</h2>
+                <p>
+                    HTML, CSS, JavaScript and other files are loaded
+                    directly from the web directory.
+                </p>
+            </div>
+
+        </section>
+
+
+        <section class="terminal">
+
+            <div class="terminal-header">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <p>server.log</p>
+            </div>
+
+            <div class="terminal-body">
+                <p><span class="green">[OK]</span> WinSock initialized</p>
+                <p><span class="green">[OK]</span> Socket created</p>
+                <p><span class="green">[OK]</span> Bound to port 8080</p>
+                <p><span class="green">[OK]</span> Server listening...</p>
+                <p><span class="blue">[HTTP]</span> GET /</p>
+                <p><span class="blue">[HTTP]</span> GET /style.css</p>
+                <p><span class="blue">[HTTP]</span> GET /script.js</p>
+                <p class="cursor">█</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Built with questionable amounts of C++.
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>
